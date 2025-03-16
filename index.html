@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Iron List</title>
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+  <body>
+
+    <div id="notification" class="hidden">Winter is coming...</div>
+    <div id="overlay"></div>
+    <video autoplay loop muted playsinline id="bgVideo">
+      <source src="background.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <div id="trackerContainer">
+    <div class="container">
+      <h1>Internship Tracker</h1>
+      <input type="text" id="companyInput" placeholder="Enter company name" />
+      <input type="date" id="deadlineInput" />
+      <!-- Deadline Input -->
+      <input type="text" id="notesInput" placeholder="Add notes (optional)" />
+      
+      <ul id="companyList"></ul>
+      <button id="addButton">Add</button>
+    </div>
+
+    <div id="companyTableContainer">
+        <h2>Applied Companies</h2>
+        <table id="companyTable">
+            <thead>
+                <tr>
+                    <th>✅</th>
+                    <th>Company</th>
+                    <th>Deadline</th>
+                    <th>Notes</th>
+                    <th>❌</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div id="varysContainer">
+    <img id="varysImage" src="varys.png" alt="Varys">
+    <div id="varysQuoteBox">
+        <span id="varysQuote">"A wise job seeker understands that knowledge is power."</span>
+    </div>
+</div>
+
+
+    <script defer src="script.js"></script>
+  </body>
+</html>
